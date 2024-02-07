@@ -1,0 +1,31 @@
+$font: 'Lexend';
+
+.heading-one {
+    font-size: 40px;
+    font-family:$font;
+    font-weight: 600;
+}
+
+.heading-two {
+    font-size: 32px;
+    font-family:$font;
+    font-weight: 400;
+}
+
+.heading-three {
+    font-size: 24px;
+    font-family:$font;
+    font-weight: 300;
+}
+
+.heading-four {
+    font-size: 20px;
+    font-family:$font;
+    font-weight: 300;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-family: $font;
+}
+
