@@ -13,6 +13,88 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 class="heading-one">Hello World</h1>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="header__navigation">
+          <div class="header__navigation--logo">
+            <div class="header__navigation--logo-layer one"></div>
+            <div class="header__navigation--logo-layer two"></div>
+            <p class="header__navigation--logo-title label-bold">Hounter</p>
+          </div>
+          <div class="header__navigation--buttons-container">
+            <div class="nav-button">About Us</div>
+            <div class="nav-button">Article</div>
+            <div class="nav-button">Property</div>
+            <div class="nav-button">Sign Up</div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="header__navigation--burger-icon"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </nav>
+        <div class="hero__img-container"></div>
+      </header>
+
+      <section class="hero">
+        <div class="hero_content-wrapper">
+          <h1 class="heading-one">
+            Find The Place To Live <span class="green">Your Dreams</span> Easily
+            Here
+          </h1>
+          <p class="body-light">
+            Everything you need about finding your place to live will be here,
+            where it will be easier for you
+          </p>
+          <div class="hero_search-location--container">
+            <svg
+              class="hero_search-location--icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+              />
+            </svg>
+            <input
+              type="text"
+              class="hero_search-location--input"
+              placeholder="Search for the location you want!"
+            />
+            <button class="hero_search-location--button label-medium">
+              Search
+              <svg
+                class="arrow-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                />
+              </svg>
+            </button>
+          </div>
+          <p class="hero_partnership-text body-light">Our Partnership</p>
+          <div class="hero_partnership-container">
+            <img src="./assets/icons/traveloka.svg" alt="traveloka logo" />
+            <img src="./assets/icons/ticketcom.svg" alt="ticket.com logo" />
+            <img src="./assets/icons/airbnb.svg" alt="airbnb logo" />
+            <img src="./assets/icons/tripadvisor.svg" alt="tripadvisor logo" />
+          </div>
+        </div>
+
+        <div class="hero_img-container">
+            <img src="./assets/images/hero-image.png" alt="villa picture" class="hero_img-container--img">
+
+        </div>
+      </section>
+    </div>
   </body>
 </html>

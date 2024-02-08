@@ -1,26 +1,36 @@
 $font: 'Lexend';
 
 .heading-one {
-    font-size: 40px;
+    font-size: 32px;
     font-family:$font;
-    font-weight: 600;
+    font-weight: 900;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 40px;
+    }
 }
 
 .heading-two {
     font-size: 32px;
-    font-family:$font;
+    font-family: $font;
     font-weight: 400;
 }
 
 .heading-three {
     font-size: 24px;
-    font-family:$font;
+    font-family: $font;
     font-weight: 300;
 }
 
 .heading-four {
     font-size: 20px;
-    font-family:$font;
+    font-family: $font;
+    font-weight: 300;
+}
+
+.body-light {
+    font-size: 16px;
+    font-family: $font;
     font-weight: 300;
 }
 
@@ -29,3 +39,14 @@ $font: 'Lexend';
     font-family: $font;
 }
 
+.label-bold {
+    font-size: 14px;
+    font-family: $font;
+    font-weight: 800;
+}
+
+.label-medium {
+    font-size: 14px;
+    font-family: $font;
+    font-weight: 500;
+}
