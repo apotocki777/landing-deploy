@@ -34,6 +34,13 @@ $font: 'Lexend';
     font-weight: 300;
 }
 
+.body-semibold {
+    font-size: 16px;
+    font-family: $font;
+    font-weight: 600;
+    line-height: 20px;
+}
+
 .subtitle {
     font-size: 18px;
     font-family: $font;
@@ -49,4 +56,12 @@ $font: 'Lexend';
     font-size: 14px;
     font-family: $font;
     font-weight: 500;
+}
+
+.label-small {
+    font-size: 12px;
+    font-family: $font;
+    font-weight: 400;
+    line-height: 15px;
+    color: var(--clr-grey-2);
 }

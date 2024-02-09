@@ -1,4 +1,5 @@
 import './styles/main.scss'
+import startScrolling from './infinite-sroll'
 
-console.log("hello world")
-console.log("good morning world")
+startScrolling()
+

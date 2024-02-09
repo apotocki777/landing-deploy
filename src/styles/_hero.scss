@@ -1,6 +1,7 @@
 .hero {
     display: flex;
     flex-direction: column;
+    // overflow-x: hidden;
 
     @media screen and (min-width: 1100px) {
         flex-direction: row;
@@ -148,8 +149,10 @@
 
   &_img-container {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 6fr 1fr;
+    grid-template-columns: 1fr;
+    // border: 2px solid indigo;
+    // overflow-x: hidden;
+
     flex-shrink: 0;
     height: 100%;
     width: 100%;
@@ -159,14 +162,40 @@
     }
 
     &--img {
-        grid-row: span 2;
         height: 100%;
         width: 100%;
         object-fit: contain;
         
-        @media screen and (min-width: 990px) {
+        @media screen and (min-width: 1100px) {
             border-radius: 0 0 0 100px;
         }
+    }
+
+    &--cards-container {
+        height: 100px;
+        min-width: 150%;
+        border: 2px solid indigo;
+        // transform: translateX(-50%);
+        // overflow-x: scroll;
+
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+    }
+    &--window {
+        width: 100%;
+        display: flex;
+        z-index: 4;
+        // margin-left: 10%;
+        margin-bottom: 12%;
+        border: 2px solid red;
+        align-self: end;
+    }
+
+    &--img, &--window {
+        grid-row: 1;
+        grid-column: 1;
     }
   }
 }

@@ -1,0 +1,39 @@
+.peoples-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 32px;
+    min-width: fit-content;
+    min-height: 100%;
+    padding: 16px;
+    background-color: white;
+    animation: infinite-scroll 3s linear infinite;
+
+    &_avatar {
+        height: 56px;
+        width: 56px;
+        border-radius: 100px;
+        border: 2px solid var(--clr-white);
+
+        &.avatar-three, &.avatar-two {
+            margin-left: -40px;
+        }
+    }
+
+    &_text-container {
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+    }
+}
+
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+
+    to {
+        transform: translateX(-400px);
+    }
+}
