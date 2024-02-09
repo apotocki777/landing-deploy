@@ -150,8 +150,7 @@
   &_img-container {
     display: grid;
     grid-template-columns: 1fr;
-    // border: 2px solid indigo;
-    // overflow-x: hidden;
+    overflow-x: hidden;
 
     flex-shrink: 0;
     height: 100%;
@@ -173,23 +172,28 @@
 
     &--cards-container {
         height: 100px;
-        min-width: 150%;
-        border: 2px solid indigo;
-        // transform: translateX(-50%);
-        // overflow-x: scroll;
+        min-width: fit-content;
+        padding: 0 8px;
 
         display: flex;
         align-items: center;
         gap: 24px;
 
+        &.primary {
+            animation: primary 10s linear infinite;
+        }
+
+        &.secondary {
+            animation: secondary 10s linear infinite;
+        }
+
     }
     &--window {
-        width: 100%;
+        position: relative;
         display: flex;
+        min-width: fit-content;
         z-index: 4;
-        // margin-left: 10%;
-        margin-bottom: 12%;
-        border: 2px solid red;
+        margin-bottom: 10%;
         align-self: end;
     }
 
@@ -199,3 +203,21 @@
     }
   }
 }
+
+@keyframes primary {
+    from {
+    transform: translateX(0);
+    }
+    to {
+    transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes secondary {
+    from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+  }
