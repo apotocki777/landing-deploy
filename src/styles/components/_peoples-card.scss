@@ -7,7 +7,6 @@
     min-height: 100%;
     padding: 16px;
     background-color: white;
-    // animation: infinite-scroll 3s linear infinite;
 
     &_avatar {
         height: 56px;
@@ -24,16 +23,5 @@
         display: flex;
         flex-direction: column;
         min-width: fit-content;
-    }
-}
-
-@keyframes infinite-scroll {
-    from {
-        transform: translateX(0);
-    }
-
-
-    to {
-        transform: translateX(-400px);
     }
 }
