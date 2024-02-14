@@ -13,19 +13,19 @@ $font: 'Lexend';
 .heading-two {
     font-size: 32px;
     font-family: $font;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .heading-three {
     font-size: 24px;
     font-family: $font;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .heading-four {
     font-size: 20px;
     font-family: $font;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .body-light {
@@ -53,9 +53,11 @@ $font: 'Lexend';
 }
 
 .label-medium {
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: .9rem;
+    
     font-family: $font;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .label-small {

@@ -15,6 +15,13 @@
     --clr-danger-light: #FEE2E2;
     --clr-info: #1D4ED8;
     --clr-info-light: #DBEAFE;
+    --clr-logo-layer-two: #4be4c9;
+
+    //Padding
+    --padding: 32px;
+    @media screen and (min-width: 880px) {
+        --padding: 32px 80px;
+    }
 }
 
 // CSS reset from: https://www.joshwcomeau.com/css/custom-css-reset/
@@ -65,8 +72,8 @@
     isolation: isolate;
   }
 
+
   .wrapper {
-    // padding: 16px 32px;
     position: relative;
     max-width: 1400px;
     margin: 0 auto;
