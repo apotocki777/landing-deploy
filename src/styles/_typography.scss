@@ -32,6 +32,14 @@ $font: 'Lexend';
     font-size: 16px;
     font-family: $font;
     font-weight: 300;
+    line-height: 24px;
+}
+
+.body-medium {
+    font-size: 16px;
+    font-family: $font;
+    font-weight: 500;
+    line-height: 20px;
 }
 
 .body-semibold {

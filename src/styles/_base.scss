@@ -19,9 +19,13 @@
 
     //Padding
     --padding: 32px;
-    @media screen and (min-width: 880px) {
+    @media screen and (min-width: var(--tablet)) {
         --padding: 32px 80px;
     }
+
+    // Breakpoints 
+    --tablet: 880px;
+    --desktop: 1100px
 }
 
 // CSS reset from: https://www.joshwcomeau.com/css/custom-css-reset/

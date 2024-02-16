@@ -1,0 +1,10 @@
+.button {
+    border: none;
+    border-radius: 100px;
+    background-color: var(--clr-primary);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--clr-white);
+}
