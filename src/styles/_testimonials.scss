@@ -1,0 +1,45 @@
+.testimonials {
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > .heading-two {
+        text-align: center;
+    }
+
+    &_window {
+        border: 10px solid pink;
+        max-width: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: mandatory;
+    }
+
+    &_cards-container {
+        display: flex;
+        width: 100%;
+        gap: 32px;
+    }
+
+    & > .scroll-buttons_container {
+        display: flex;
+        gap: 16px;
+        margin-top: 16px;
+        
+        & > button {
+            cursor: pointer;
+            margin: 0;
+            outline: none;
+            border: 0;
+            padding: 0;
+            height: 10px;
+            width: 10px;
+            border-radius: 100%;
+            background-color: var(--clr-grey-1);
+
+            &:hover, &:active {
+                background-color: var(--clr-grey-3);
+            }
+        }
+    }
+}

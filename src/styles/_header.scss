@@ -89,13 +89,11 @@
 
 .dropdown {
   position: relative;
-  // border: 2px solid black;
 
   &:focus > &-menu {
     display: flex;
   }
   &-menu {
-    // border: 2px solid indigo;
     display: none;
     padding: 0;
     list-style: none;
