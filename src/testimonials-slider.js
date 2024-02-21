@@ -1,11 +1,8 @@
 const allCards = document.querySelectorAll(".testimonials_card");
 const allCardsArray = Array.from(allCards)
-const oneCardPercentageWidth = 100 / allCards.length;
 const frame = document.querySelector(".testimonials_window");
-const cardsContainer = document.querySelector(".testimonials_cards-container");
 
 let transformAmount = 0;
-let slideCount = 0;
 let currentCardInDisplay = allCards[0]
 
 const createButtons = () => {
@@ -45,6 +42,11 @@ function activateButton(currButton) {
     currButton.classList.add("active")
 }
 
+function scrollToBeginning() {
+    frame.scroll(0, 0)
+    slide(allCards[0])
+    activateButton(document.querySelector(".testimonials-scroll-button"))
+}
 
 
-createButtons();
+export {createButtons, scrollToBeginning}
