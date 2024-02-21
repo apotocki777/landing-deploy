@@ -9,16 +9,15 @@
     }
 
     &_window {
-        border: 10px solid pink;
         max-width: 100%;
-        overflow-x: scroll;
-        scroll-snap-type: mandatory;
+        overflow-x: hidden;
+        // scroll-snap-type: mandatory;
+
     }
 
     &_cards-container {
         display: flex;
         width: 100%;
-        gap: 32px;
     }
 
     & > .scroll-buttons_container {
@@ -38,6 +37,10 @@
             background-color: var(--clr-grey-1);
 
             &:hover, &:active {
+                background-color: var(--clr-grey-3);
+            }
+
+            &.active {
                 background-color: var(--clr-grey-3);
             }
         }
