@@ -31,4 +31,15 @@
         color: var(--clr-black)
     }
   }
+
+  &_articles-container {
+    display: grid;
+    margin-top: 32px;
+
+    &_small {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+  }
 }
