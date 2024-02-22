@@ -16,7 +16,6 @@ const createButtons = () => {
     button.addEventListener("click", (e) => {
         slide(e.target.relatedCard)
         activateButton(e.target)
-      console.log(e.target.relatedCard);
     });
   });
   console.log(buttonContainer.children)
@@ -24,9 +23,9 @@ const createButtons = () => {
 };
 
 function slide (card) {
-    let difference = allCardsArray.indexOf(card) - allCardsArray.indexOf(currentCardInDisplay)
+    let indexDifference = allCardsArray.indexOf(card) - allCardsArray.indexOf(currentCardInDisplay)
 
-    transformAmount += 100 * difference
+    transformAmount += 100 * indexDifference
     currentCardInDisplay = card
 
     allCards.forEach(card => {
