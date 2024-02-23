@@ -1,59 +1,81 @@
 .article {
+    display: grid;
+    grid-template-rows: auto;
 
-    &_small {
-        display: grid;
-        grid-template-rows:auto;
-        
-        &--img {
-            height: 100%;
-            width: 100%;
-            
-            & > img {
-                height: 100%;
-                width: 100%;
-                object-fit: contain;
-                border-radius: 16px;
-            }
-        }
-
-        &--content {
-            padding: 16px 8px;
-            display: flex;
-            gap: 8px;
-            flex-direction: column;
-            align-items: flex-start;
-
-            & > .customer-avatar {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                gap: 8px;
-
-                & > img {
-                    height: 32px;
-                    width: 32px;
-                }
-            }
-
-            & > .subtitle {
-                color: var(--clr-black);
-            }
-
-        }
-
-        &--date-container {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        &.hidden {
-            display: none;
-        }
-
+    @media screen and (min-width: 810px) {
+      // border: 2px solid indianred;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
 
-    &_large {
+    &--img {
+      height: 100%;
+      width: 100%;
 
+
+      & > img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 16px;
+
+        @media screen and (min-width: 810px) {
+          object-fit: cover;
+          height: auto;
+          max-width: 100%;
+        }
+      }
     }
+
+    &--content {
+      padding: 1rem .5rem;
+      display: flex;
+      gap: .5rem;
+      flex-direction: column;
+      align-items: flex-start;
+
+      & > .customer-avatar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+
+        & > img {
+          height: 2rem;
+          width: 2rem;
+        }
+      }
+
+      & > .subtitle {
+        color: var(--clr-black);
+      }
+
+      & > .heading-three {
+        color: var(--clr-black)
+      }
+    }
+
+    &--date-container {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    &.hidden {
+      display: none;
+    }
+
+  &_large {
+    display: none;
+
+    @media screen and (min-width: 810px) {
+      display: block;
+
+      &--content {
+        & > h3 {
+          color: var(--clr-black);
+        }
+      }
+    }
+  }
 }
