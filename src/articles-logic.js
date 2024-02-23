@@ -9,6 +9,8 @@ const hideArticles = (e) => {
     article.classList.add("hidden");
   });
 
+  largeArticle.style.position = "relative"
+
   e.target.firstChild.textContent = "More Articles";
 };
 
@@ -16,6 +18,8 @@ const showHiddenArticles = (e) => {
   hiddenArticles.forEach((article) => {
     article.classList.remove("hidden");
   });
+
+  largeArticle.style.position = "sticky"
 
   e.target.firstChild.textContent = "Hide Articles";
 };

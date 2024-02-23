@@ -1,6 +1,7 @@
 .article {
     display: grid;
     grid-template-rows: auto;
+    cursor: pointer;
 
     @media screen and (min-width: 810px) {
       // border: 2px solid indianred;
@@ -8,9 +9,15 @@
       gap: 2rem;
     }
 
+    &:hover > &--content > .subtitle {
+        text-decoration: underline;
+    }
+
     &--img {
       height: 100%;
       width: 100%;
+      display: flex;
+      align-items: center;
 
 
       & > img {
@@ -67,6 +74,9 @@
 
   &_large {
     display: none;
+    // position: sticky;
+    padding-top: 2rem;
+    top: 0;
 
     @media screen and (min-width: 810px) {
       display: block;
