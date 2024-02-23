@@ -2,7 +2,6 @@ const showMoreButton = document.querySelector(".show-more");
 const hiddenArticles = document.querySelectorAll(".article.hidden");
 const allArticles = document.querySelectorAll(".article");
 const largeArticle = document.querySelector(".article_large");
-console.log(showMoreButton, hiddenArticles);
 
 const hideArticles = (e) => {
   hiddenArticles.forEach((article) => {
@@ -87,9 +86,4 @@ const changeLargeArticle = (e) => {
   largeArticleDate.textContent = targetDateTextContent; 
 };
 
-showMoreButton.addEventListener("click", toggleHiddenArticles);
-allArticles.forEach((article) => {
-  article.addEventListener("click", changeLargeArticle);
-});
-
-console.log(largeArticle);
+export {toggleHiddenArticles, changeLargeArticle}

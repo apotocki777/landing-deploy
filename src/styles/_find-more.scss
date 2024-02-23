@@ -42,10 +42,14 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    @media screen and (min-width: 550px) and (max-width:810px) {
+        padding: 32px 80px;
+      }
+
     &_small {
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 50px;
     }
   }
 }
