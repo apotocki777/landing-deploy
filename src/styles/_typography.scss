@@ -4,6 +4,7 @@ $font: 'Lexend';
     font-size: 2rem;
     font-family:$font;
     font-weight: 900;
+    color: var(--clr-black);
 
     @media screen and (min-width: 1200px) {
         font-size: 2.25rem;
@@ -14,18 +15,21 @@ $font: 'Lexend';
     font-size: 2rem;
     font-family: $font;
     font-weight: 600;
+    color: var(--clr-black);
 }
 
 .heading-three {
     font-size: 1.5rem;
     font-family: $font;
     font-weight: 500;
+    color: var(--clr-black);
 }
 
 .heading-four {
     font-size: 1.25rem;
     font-family: $font;
     font-weight: 500;
+    color: var(--clr-black);
 }
 
 .body-light {

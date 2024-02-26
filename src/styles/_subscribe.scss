@@ -1,0 +1,124 @@
+.subscribe {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding);
+  width: 94%;
+  border-radius: 32px;
+  margin: 0 auto;
+  background-image: url("../../dist/assets/images/subscribe_background.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+
+  @media screen and (min-width:810px) {
+    margin-top: 2rem;
+    padding: 64px 128px;
+    background-size: cover;
+    & > h2 {
+        max-width: 70%;
+      }
+  }
+
+  @media screen and (min-width: 1024px) {
+    & > h2 {
+      max-width: 60%;
+    }
+  }
+
+  &_input--container {
+    margin-top: 16px;
+    display: flex;
+    border: 1px solid var(--clr-grey-1);
+    align-items: center;
+    max-width: 100%;
+    gap: 8px;
+    background-color: var(--clr-white);
+    padding: 4px 4px 4px 24px;
+    border-radius: 28px;
+
+    & > img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    & > input {
+      // border: none;
+      min-width: 0;
+      border: none;
+      outline: none;
+      font-family: "lexend";
+
+      &:placeholder-shown {
+        text-overflow: ellipsis;
+      }
+    }
+
+    & > button {
+      min-width: 0;
+      font-size: 0.7rem;
+    }
+  }
+
+  & > .subscribe_img {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid var(--clr-white);
+    border-radius: 24px;
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+        display: block;
+    }
+
+    &.one {
+        top: 10%;
+        left: 5%;
+        height: 4rem;
+        width: 4rem;
+    }
+
+    &.two {
+        top: 60%;
+        left: 18%;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    &.three {
+        top: 10%;
+        right: 18%;
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    &.four {
+        bottom: 15%;
+        right: 8%;
+        height: 3.3rem;
+        width: 3.3rem;
+    }
+
+    &.five {
+        top: 17%;
+        left: 18%;
+    }
+
+    &.six {
+        top: 57%;
+        left: 6%;
+    }
+
+    &.seven {
+        top: 40%;
+        right: 18%;
+    }
+
+    &.eight {
+        top: 30%;
+        right: 10%;
+    }
+  }
+}

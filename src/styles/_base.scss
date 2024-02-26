@@ -19,9 +19,7 @@
 
     //Padding
     --padding: 32px;
-    @media screen and (min-width: var(--tablet)) {
-        --padding: 32px 80px;
-    }
+    --padding-large: 32px 80px;
 
     // Breakpoints 
     --tablet: 880px;
