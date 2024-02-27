@@ -18,7 +18,6 @@ const createButtons = () => {
         activateButton(e.target)
     });
   });
-  console.log(buttonContainer.children)
   buttonContainer.children[0].classList.add("active")
 };
 
