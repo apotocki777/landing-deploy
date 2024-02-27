@@ -32,27 +32,24 @@ const toggleHiddenArticles = (e) => {
 };
 
 const changeLargeArticle = (e) => {
-  /*TARGET ARTICLE*/
-  const targetArticle = e.currentTarget;
-
   //target img
-  const imgContainer = targetArticle.querySelector(".article--img");
+  const imgContainer = e.currentTarget.querySelector(".article--img");
   const imgSrc = imgContainer.querySelector("img").src;
 
   //target avatar
-  const targetAvatarContainer = targetArticle
+  const targetAvatarContainer = e.currentTarget
     .querySelector(".article--content")
     .querySelector(".customer-avatar");
   const targetAvatarImgSrc = targetAvatarContainer.querySelector("img").src;
   const targetAvatarName = targetAvatarContainer.querySelector("p").textContent;
 
   //target article content
-  const targetArticleContent = targetArticle
+  const targetArticleContent = e.currentTarget
     .querySelector(".article--content")
     .querySelector(".subtitle").textContent;
 
   //target article date
-  const targetArticleDate = targetArticle
+  const targetArticleDate = e.currentTarget
     .querySelector(".article--content")
     .querySelector(".article--date-container")
     .querySelector("p");
