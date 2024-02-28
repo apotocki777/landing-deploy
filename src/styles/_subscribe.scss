@@ -56,6 +56,10 @@
       &:placeholder-shown {
         text-overflow: ellipsis;
       }
+
+      &:invalid {
+        border: 2px solid red;
+      }
     }
 
     & > button {

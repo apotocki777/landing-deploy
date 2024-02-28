@@ -87,8 +87,12 @@
         position: relative;
         & > .text-counter {
             position: absolute;
-            left: 88%;
+            left: 80%;
             top: 88%;
+
+            @media screen and (min-width:810px) {
+                left: 88%;
+            }
         }
       }
 
