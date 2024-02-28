@@ -9,6 +9,7 @@ const changeSelection = (e) => {
     placeholderText.textContent = selectedText;
     placeholderText.style.color = "var(--clr-black)"
     toggleSelectVisibility()
+    console.log("changed", selectOptions, selectHeader)
 }
 
 const toggleSelectVisibility = () => {
@@ -19,7 +20,10 @@ const toggleSelectVisibility = () => {
 selectHeader.addEventListener("click", toggleSelectVisibility)
 
 allSelectValues.forEach(value => {
-    value.addEventListener("click", changeSelection)
+    value.addEventListener("click",(e) => {
+        changeSelection(e)
+        toggleSelectVisibility()
+    })
 })
 
 

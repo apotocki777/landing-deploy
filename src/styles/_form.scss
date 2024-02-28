@@ -52,30 +52,30 @@
         justify-content: space-between;
 
         @media screen and (min-width: 1024px) {
-            flex-direction: row;
-            justify-content: stretch;
-            align-items: flex-start;
+          flex-direction: row;
+          justify-content: stretch;
+          align-items: flex-start;
 
-            & > label {
-                width: 25%;
-            }
+          & > label {
+            width: 25%;
+          }
         }
 
-        & > input, & > textarea {
-            border: 2px solid var(--clr-grey-1);
-            padding: 8px 16px;
-            border-radius: 26px;
-            font-family: "lexend";
+        & > input,
+        & > textarea {
+          border: 2px solid var(--clr-grey-1);
+          padding: 8px 16px;
+          border-radius: 26px;
+          font-family: "lexend";
 
-            &:focus {
-                outline: 2px solid var(--clr-primary);
-            }
+          &:focus {
+            outline: 2px solid var(--clr-primary);
+          }
 
-            @media screen and (min-width:1024px) {
-                width: 100%;
-            }
+          @media screen and (min-width: 1024px) {
+            width: 100%;
+          }
         }
-
 
         & > input::placeholder {
           font-family: "lexend";
@@ -85,10 +85,10 @@
       & > li:last-child {
         flex-direction: row;
 
-        @media screen and (min-width:1024px) {
-            width: 60%;
-            align-self: center;
-            padding-left: 0;
+        @media screen and (min-width: 1024px) {
+          width: 60%;
+          align-self: center;
+          padding-left: 0;
         }
 
         & > input[type="checkbox"] {
@@ -112,55 +112,16 @@
 
 //CUSTOM SELECT
 .select {
-//   border-radius: 32px;
-position: relative;
   &_container {
-    // position: absolute;
-    // width: 80%;
-    // left: 21%;
     width: 100%;
-
-    & > ul {
-        // position: absolute;
-      border: 2px solid var(--clr-grey-1);
-      border-top: none;
-      border-bottom-left-radius: 26px;
-      border-bottom-right-radius: 26px;
-
-      list-style: none;
-      background-color: var(--clr-white);
-      width: 100%;
-      padding: 0;
-      
-
-      &.hidden {
-        display: none;
-      }
-
-      & > li {
-        padding: 0 16px;
-        font-family: "lexend";
-        color: var(--clr-black);
-      }
-
-      & > li:hover {
-        background-color: blue;
-        color: white;
-      }
-
-      & > li:last-child {
-        border-bottom-left-radius: 26px;
-        border-bottom-right-radius: 26px;
-      }
-    }
+    z-index: 30;
+    position: relative;
   }
 
   &_placeholder {
     border: 2px solid var(--clr-grey-1);
-    border-bottom: 0;
-    border-top-left-radius: 26px;
-    border-top-right-radius: 26px;
-    padding: 8px 16px 0 16px;
+    border-radius: 26px;
+    padding: 8px 16px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -171,9 +132,8 @@ position: relative;
     background-color: white;
 
     &.select-hidden {
-        border: 2px solid var(--clr-grey-1);
-        border-radius: 26px;
-        padding: 8px 16px;
+      border: 2px solid var(--clr-grey-1);
+      border-radius: 26px;
     }
 
     & > svg {
@@ -181,6 +141,42 @@ position: relative;
       width: 0.8rem;
       fill: var(--clr-grey-2);
       cursor: pointer;
+    }
+
+    & > ul {
+      position: absolute;
+      z-index: -1;
+      bottom: -178px;
+      right: 0%;
+
+      border: 2px solid var(--clr-grey-1);
+      border-bottom-left-radius: 26px;
+      border-bottom-right-radius: 26px;
+
+      list-style: none;
+      background-color: var(--clr-white);
+      width: 100%;
+      padding: 30px 8px 10px 8px;
+
+      &.hidden {
+        display: none;
+      }
+
+      & > li {
+        padding: 8px;
+        font-family: "lexend";
+        color: var(--clr-black);
+      }
+
+      & > li:hover {
+        background-color: var(--clr-primary-light);
+        border-radius: 26px;
+      }
+
+      & > li:last-child {
+        border-bottom-left-radius: 26px;
+        border-bottom-right-radius: 26px;
+      }
     }
   }
 }
