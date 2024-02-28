@@ -38,6 +38,10 @@
     padding: 4px 4px 4px 24px;
     border-radius: 28px;
 
+    &:focus {
+      outline: var(--clr-primary);
+    }
+
     & > img {
       height: 1.5rem;
       width: 1.5rem;
