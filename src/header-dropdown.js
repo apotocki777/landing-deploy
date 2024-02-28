@@ -4,7 +4,7 @@ const dropdownMenu = document.querySelector(".dropdown-menu");
 let clicked = false;
 
 const showDropdown = () => {
-  if (clicked === false) {
+  if (!clicked) {
     clicked = true;
     dropdownMenu.style.display = "flex";
   } else {

@@ -4,6 +4,7 @@ import './header-dropdown'
 import './video-player.js'
 import { createButtons, scrollToBeginning } from './testimonials-slider.js'
 import {toggleHiddenArticles, changeLargeArticle} from './articles-logic.js'
+import './form-logic.js'
 
 const showMoreButton = document.querySelector(".show-more");
 const allArticles = document.querySelectorAll(".article");
