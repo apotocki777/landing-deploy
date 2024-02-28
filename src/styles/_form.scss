@@ -82,6 +82,16 @@
         }
       }
 
+      // TEXT AREA
+      & > li:nth-child(4) {
+        position: relative;
+        & > .text-counter {
+            position: absolute;
+            left: 88%;
+            top: 88%;
+        }
+      }
+
       & > li:last-child {
         flex-direction: row;
 
