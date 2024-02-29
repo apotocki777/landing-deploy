@@ -33,6 +33,7 @@
     max-width: 100%;
     scroll-snap-type: mandatory;
     overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 
     @media screen and (min-width: 810px) {
         overflow-x: hidden;

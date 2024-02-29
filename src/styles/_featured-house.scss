@@ -81,6 +81,10 @@
       margin-top: 32px;
       gap: 16px;
 
+      @media screen and (max-width:810px) {
+        display: none;
+      }
+
       @media screen and (min-width: 500px) {
         justify-content: center;
       }
@@ -152,7 +156,11 @@
       display: flex;
       justify-content: center;
       overflow-x: hidden;
-      // padding: 0 32px;
+
+      @media screen and (max-width:810px) {
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+      }
     }
   }
 }

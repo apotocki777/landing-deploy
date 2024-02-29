@@ -5,6 +5,7 @@
   align-items: center;
   transition: transform 0.8s ease-in-out;
   padding: 0 32px;
+  scroll-snap-align: start;
 
   &--img-container {
     min-width: 100%;

@@ -5,15 +5,12 @@ const slideRightButton = document.querySelector(".arrow-left")
 const slideLeftButton = document.querySelector(".arrow-right")
 const viewportWidth = window.innerWidth
 
-
-
 let slideCount = 0
 let transformAmount = 0
 
 function slideLeft () {
     const frameWidth = frame.offsetWidth;
     const cardWidth = allCards[0].offsetWidth;
-    let gap = 16;
     let gapPercentage = 8 / viewportWidth * 100
     console.log(gapPercentage)
 
@@ -41,7 +38,13 @@ function slideRight () {
     })
 }
 
-
+function scrollWindowToBegining () {
+    if (window.innerWidth >= 810) {
+        frame.scroll(0,0)
+    }
+}
 
 slideLeftButton.addEventListener("click", slideLeft)
 slideRightButton.addEventListener("click", slideRight)
+window.addEventListener("resize", scrollWindowToBegining)
+
