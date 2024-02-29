@@ -1,6 +1,9 @@
 .our-recomendation {
+  display: flex;
+  justify-content: flex-start;
   color: var(--clr-secondary);
   position: relative;
+
 
   &::before {
     content: "";
@@ -17,9 +20,14 @@
 .featured-house {
   padding: var(--padding);
 
+  @media screen and (min-width: 810px) {
+    padding: var(--padding-large);
+  }
+
   &_nav {
     display: flex;
     flex-direction: column;
+    padding: 16px 0;
 
     @media screen and (min-width: 1024px) {
       flex-direction: row;
@@ -35,7 +43,6 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 16px;
-      margin-top: 16px;
       padding: 0;
 
       @media screen and (min-width: 500px) {
@@ -88,7 +95,8 @@
         border-radius: 100px;
         cursor: pointer;
 
-        &:hover, &:active {
+        &:hover,
+        &:active {
           background-color: var(--clr-primary);
 
           & .featured-house_nav-arrows--icon {
@@ -105,25 +113,29 @@
     }
   }
   &_cards {
+    // border: 2px solid black;
     min-height: 400px;
+
     &--wrapper {
       display: flex;
       max-width: 100%;
+      justify-content: space-between;
+      // border: 2px solid black;
+      padding: 0 32px;
+      gap: 16px;
     }
-    
+
     &--container {
       display: flex;
       justify-content: center;
-      min-width: 100%;
-      transition: transform .5s ease-in;
-      padding: 0 8px;
+      min-width: 50%;
+      transition: transform 0.5s ease-in;
 
-      @media screen and (min-width: 880px) {
-        min-width: 50%;
-        padding: 0 16px;
+      @media screen and (max-width: 450px) {
+        min-width: 100%;
       }
 
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 810px) {
         min-width: 33.3%;
       }
     }
@@ -131,6 +143,7 @@
       display: flex;
       justify-content: center;
       overflow-x: hidden;
+      // padding: 0 32px;
     }
   }
 }

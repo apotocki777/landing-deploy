@@ -4,8 +4,11 @@
   row-gap: 16px;
   max-width: 100%;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 810px) {
     padding: var(--padding-large);
+  }
+
+  @media screen and (min-width: 1024px) {
     grid-template-columns: 2fr 3fr;
     column-gap: 32px;
   }

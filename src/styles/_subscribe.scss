@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: var(--padding);
-  width: 86%;
+  width: 100%;
   border-radius: 32px;
   margin: 0 auto;
   background-image: url("../../dist/assets/images/subscribe_background.jpg");
@@ -127,5 +127,13 @@
         top: 30%;
         right: 10%;
     }
+  }
+}
+
+.subscribe-wrapper {
+  padding: var(--padding);
+
+  @media screen and (min-width:810px) {
+    padding: var(--padding-large);
   }
 }

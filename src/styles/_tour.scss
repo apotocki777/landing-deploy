@@ -3,11 +3,13 @@
   grid-template-rows: 1fr 1fr;
   padding: var(--padding);
   
+  @media screen and (min-width:810px) {
+    padding: var(--padding-large);
+  }
 
   @media screen and (min-width: 1024px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: var(--padding-large);
   }
 
   &_content {

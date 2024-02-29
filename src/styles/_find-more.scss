@@ -1,6 +1,10 @@
 .find-more {
   padding: var(--padding);
 
+  @media screen and (min-width:810px) {
+    padding: var(--padding-large);
+  }
+
   &_header {
     margin-top: 32px;
     display: flex;
