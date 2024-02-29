@@ -79,6 +79,10 @@
             background-color: var(--clr-primary-light);
             color: var(--clr-primary-dark);
             border: 1px solid var(--clr-primary-dark);
+
+            & > svg {
+              fill: var(--clr-primary);
+            }
           }
         }
       }
@@ -101,5 +105,29 @@
     gap: 8px;
     margin-top: 8px;
     width: 98px;
+  }
+
+  & > .nav-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    & > svg {
+      height: 0.8rem;
+      width: 0.8rem;
+      fill: var(--clr-white);
+    }
+  }
+
+  & > .dropdown-menu {
+    width: 100%;
+    & > .nav-button {
+      color: var(--clr-black);
+      background-color: var(--clr-primary);
+
+      &:hover {
+        background-color: var(--clr-primary-light);
+      }
+    }
   }
 }
