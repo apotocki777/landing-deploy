@@ -15,7 +15,6 @@ function slideLeft () {
     console.log(gapPercentage)
 
     if (slideCount === allCards.length - (Math.round(frameWidth / cardWidth))) {
-        console.log(allCards.length - (Math.round(frameWidth / cardWidth)))
         return
     }
 
