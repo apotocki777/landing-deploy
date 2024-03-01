@@ -62,10 +62,11 @@
 
       @media screen and (min-width: 1024px) {
         display: flex;
-        justify-content: space-between;
         flex-wrap: nowrap;
-        width: 45%;
+        width: 50%;
         z-index: 10;
+        justify-content: flex-end;
+        gap: 12px;
 
         & .nav-button {
           border: 1px solid white;

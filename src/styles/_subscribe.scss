@@ -52,6 +52,7 @@
       border: none;
       outline: none;
       font-family: "lexend";
+      border-radius: 16px;
 
       &:placeholder-shown {
         text-overflow: ellipsis;
@@ -59,6 +60,10 @@
 
       &:invalid {
         border: 2px solid red;
+      }
+
+      &:valid {
+        border: 2px solid var(--clr-primary);
       }
     }
 

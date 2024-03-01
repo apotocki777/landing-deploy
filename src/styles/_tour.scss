@@ -220,7 +220,6 @@
     height: 100%;
     width: 100%;
     padding-top: 64px;
-    // aspect-ratio: 16/9;
 
     @media screen and (min-width: 1024px) {
       padding-top: 0;
@@ -232,8 +231,8 @@
 
     & > .close {
       position: absolute;
-      top: 7%;
-      right: 3%;
+      top: 0%;
+      right: 0%;
       height: 50px;
       width: 50px;
       border: none;
