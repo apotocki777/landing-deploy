@@ -6,6 +6,7 @@ import { createButtons, scrollToBeginning } from './testimonials-slider.js'
 import {toggleHiddenArticles, changeLargeArticle} from './articles-logic.js'
 import './form-logic.js'
 import './cookie-banner.js'
+import './mobile-menu.js'
 
 const showMoreButton = document.querySelector(".show-more");
 const allArticles = document.querySelectorAll(".article");
