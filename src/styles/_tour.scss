@@ -214,6 +214,7 @@
   }
 
   & > .video {
+    position: relative;
     display: none;
     height: 100%;
     width: 100%;
@@ -226,6 +227,23 @@
       align-items: end;
       height: 100%;
       width: 100%;
+    }
+
+    & > .close {
+      position: absolute;
+      top: 7%;
+      right: 3%;
+      height: 50px;
+      width: 50px;
+      border: none;
+      background-color: white;
+      appearance: none;
+      
+      & > .close-icon {
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+      }
     }
 
     & > iframe {
