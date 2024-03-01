@@ -107,6 +107,7 @@
 
       & > li:last-child {
         flex-direction: row;
+        margin-left: 14px;
 
         @media screen and (min-width: 1024px) {
           width: 60%;
@@ -117,11 +118,12 @@
         & > input[type="checkbox"] {
           position: relative;
           align-self: flex-start;
-          margin-top: 4px;
+          margin-top: 8px;
           accent-color: #74992e;
 
           @media screen and (min-width: 1024px) {
             width: 10%;
+            transform: scale(1.2);;
           }
 
           &:focus {
@@ -203,3 +205,4 @@
     }
   }
 }
+

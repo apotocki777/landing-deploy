@@ -1,5 +1,6 @@
 .find-more {
   padding: var(--padding);
+  position: relative;
 
   @media screen and (min-width:810px) {
     padding: var(--padding-large);

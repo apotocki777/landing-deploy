@@ -4,9 +4,10 @@
   @media screen and (min-width: 810px) {
     padding: var(--padding-large);
     padding-right: 80px;
+    padding-left: 80px;
   }
 
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 1024px) {
     position: absolute;
     width: 100%;
   }
@@ -50,7 +51,7 @@
       fill: var(--clr-black);
       cursor: pointer;
 
-      @media screen and (min-width: 1100px) {
+      @media screen and (min-width: 1024px) {
         display: none;
       }
     }
@@ -59,9 +60,10 @@
       display: none;
       list-style: none;
 
-      @media screen and (min-width: 1100px) {
+      @media screen and (min-width: 1024px) {
         display: flex;
         justify-content: space-between;
+        flex-wrap: nowrap;
         width: 45%;
         z-index: 10;
 
@@ -74,7 +76,7 @@
           line-height: 17.5px;
           text-align: center;
           border-radius: 100px;
-          padding: 8px 16px;
+          padding: 8px 12px;
           cursor: pointer;
 
           &:hover {

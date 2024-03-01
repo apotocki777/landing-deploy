@@ -1,0 +1,47 @@
+.blur {
+    position: absolute;
+    display: none;
+
+    @media screen and (min-width:1024px) {
+        display: block;
+    }
+    
+    &.one {
+        left: 15%;
+        height: 200px;
+        width: 200px;
+        background-color: #82FFD2;
+        opacity: 30%;
+        filter: blur(20px);
+    }
+
+    &.two {
+        right: 0%;
+        top: -20%;
+        z-index: -100;
+        height: 400px;
+        width: 300px;
+        background: linear-gradient(#FF9882, #FFFA82);
+        filter: blur(120px);
+    }
+
+    &.three {
+        left: 0;
+        top: 29%;
+        z-index: -100;
+        height: 300px;
+        width: 300px;
+        background-color: #82FFD2;
+        filter: blur(40px);
+    }
+
+    &.four {
+        height: 300px;
+        width: 450px;
+        bottom: 0;
+        right: 0;
+        z-index: -100;
+        background: linear-gradient(30deg, #B9FF82, #82BBFF);
+        filter: blur(60px);
+    }
+}

@@ -98,6 +98,7 @@
 
   &_img {
     &--container {
+      position: relative;
       padding: 64px;
       height: fit-content;
       cursor: pointer;

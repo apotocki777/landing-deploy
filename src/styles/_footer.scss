@@ -1,10 +1,12 @@
 .footer {
+  position: relative;
   display: grid;
   gap: 32px;
   padding: var(--padding);
 
   @media screen and (min-width: 810px) {
     padding: var(--padding-large);
+    padding-bottom: 120px;
   }
 
   @media screen and (min-width: 1024px) {

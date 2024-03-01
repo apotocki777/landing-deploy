@@ -1,26 +1,28 @@
 .hero {
-    display: flex;
-    flex-direction: column;
-    
-    @media screen and (min-width: 1100px) {
-        flex-direction: row;
-    }
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    padding: 0 0 0 80px;
+  }
 
   &_content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 32px;
+    padding: var(--padding);
 
     @media screen and (min-width: 810px) {
-        padding-left: 80px;
-        padding-right: 80px;
-        padding-top: 80px;
+      padding-right: 80px;
+      padding-top: 80px;
+      padding-right: 80px;
+      padding-left: 80px;
     }
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 160px;
-        padding-left: 80px;
+    @media screen and (min-width: 1024px) {
+      padding-left: 0;
+      padding-top: 160px;
     }
   }
 
@@ -64,7 +66,7 @@
       justify-self: center;
 
       @media screen and (max-width: 500px) {
-        display: none
+        display: none;
       }
     }
 
@@ -81,7 +83,6 @@
         border: none;
         grid-column: span 1;
       }
-
 
       &::placeholder {
         font-size: 1rem;
@@ -148,70 +149,69 @@
     grid-template-columns: 1fr;
     position: relative;
     overflow-x: hidden;
-
     min-width: 50%;
-    height: 100%;
-    
+    min-height: 100%;
+
     @media screen and (min-width: 1100px) {
-        width: 50%;
+      width: 50%;
     }
 
     &--img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        
-        @media screen and (min-width: 1100px) {
-            border-radius: 0 0 0 100px;
-        }
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+      @media screen and (min-width: 1024px) {
+        border-radius: 0 0 0 100px;
+      }
     }
 
     &--cards-container {
-        min-width: max-content;
-        padding: 0 12px;
-        display: flex;
-        align-items: center;
-        gap: 24px;
+      min-width: max-content;
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
 
-        &.primary {
-            animation: primary 20s linear infinite;
-        }
+      &.primary {
+        animation: primary 20s linear infinite;
+      }
 
-        &.secondary {
-            animation: secondary 20s linear infinite;
-        }
-
+      &.secondary {
+        animation: secondary 20s linear infinite;
+      }
     }
     &--window {
-        display: flex;
-        position: absolute;
-        width: fit-content;
-        z-index: 4;
-        margin-bottom: 10%;
-        align-self: end;
+      display: flex;
+      position: absolute;
+      width: fit-content;
+      z-index: 4;
+      margin-bottom: 10%;
+      align-self: end;
     }
 
-    &--img, &--window {
-        grid-row: 1;
-        grid-column: 1;
+    &--img,
+    &--window {
+      grid-row: 1;
+      grid-column: 1;
     }
   }
 }
 
 @keyframes primary {
-    from {
+  from {
     transform: translateX(0);
-    }
-    to {
+  }
+  to {
     transform: translateX(-100%);
-    }
   }
-  
-  @keyframes secondary {
-    from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-100%);
-      }
+}
+
+@keyframes secondary {
+  from {
+    transform: translateX(0);
   }
+  to {
+    transform: translateX(-100%);
+  }
+}
