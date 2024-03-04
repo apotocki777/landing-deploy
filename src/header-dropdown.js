@@ -1,4 +1,3 @@
-const dropdownButton = document.querySelector(".dropdown");
 const dropdownMenu = document.querySelector(".dropdown-menu");
 
 let clicked = false;
@@ -13,4 +12,4 @@ const showDropdown = () => {
   }
 };
 
-dropdownButton.addEventListener("click", showDropdown)
+export {showDropdown}

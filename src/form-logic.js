@@ -12,7 +12,6 @@ const changeSelection = (e) => {
     placeholderText.textContent = selectedText;
     placeholderText.style.color = "var(--clr-black)"
     toggleSelectVisibility()
-    console.log("changed", selectOptions, selectHeader)
 }
 
 const toggleSelectVisibility = () => {
@@ -20,7 +19,6 @@ const toggleSelectVisibility = () => {
     selectHeader.classList.toggle("select-hidden")
 }
 
-selectHeader.addEventListener("click", toggleSelectVisibility)
 
 allSelectValues.forEach(value => {
     value.addEventListener("click",(e) => {
@@ -36,4 +34,5 @@ const updateTextCounter = () => {
     wordCounter.textContent = `${textLength}/500`
 }
 
+selectHeader.addEventListener("click", toggleSelectVisibility)
 textArea.addEventListener("keyup", updateTextCounter)
