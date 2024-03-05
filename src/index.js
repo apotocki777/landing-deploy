@@ -8,6 +8,7 @@ import './form-logic.js'
 import './cookie-banner.js'
 import './mobile-menu.js'
 import './loader.js'
+import './featured-house-filter.js'
 
 const showMoreButton = document.querySelector(".show-more");
 const allArticles = document.querySelectorAll(".article");

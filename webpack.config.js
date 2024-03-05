@@ -1,26 +1,35 @@
 const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "production",
   entry: "./src/index.js",
   output: {
-    filename: "main.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
   },
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
   devServer: {
-    static: './dist'
+    static: "./dist",
   },
   module: {
     rules: [
       {
         test: /\.scss$/i,
-        use: [
-          "style-loader",
-          "css-loader",
-          'sass-loader',
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        sideEffects: true,
       },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: "main.css",
+      chunkFilename: "[id].css",
+    }),
+  ],
+  performance: {
+    hints: false,
+}
 };

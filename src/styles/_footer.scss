@@ -26,10 +26,6 @@
       text-align: left;
     }
 
-    // & > .label-regular {
-    //     max-width: 70%;
-    // }
-
     &--logo {
       display: flex;
       justify-content: space-between;
@@ -62,12 +58,17 @@
       display: flex;
       gap: 16px;
 
-      & > svg {
+      & > a {
+        height: 1.4rem;
+        width: 1.4rem;
+        & > svg {
         height: 1.4rem;
         width: 1.4rem;
         fill: var(--clr-black);
         color: var(--clr-black);
+        cursor: pointer;
       }
+    }
     }
   }
 
@@ -93,6 +94,14 @@
     align-items: center;
     list-style: none;
     padding: 0;
+    
+    & > li {
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
 
     @media screen and (min-width: 1024px) {
       align-items: flex-start;

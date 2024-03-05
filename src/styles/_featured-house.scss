@@ -59,7 +59,7 @@
         cursor: pointer;
 
         color: var(--clr-primary-dark);
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 1.5rem;
         gap: 8px;
         border: 1px solid var(--clr-primary-dark);
         border-radius: 100px;
@@ -67,10 +67,27 @@
         &:hover {
           background-color: var(--clr-primary-light);
         }
+
+        &--icon {
+          height: 1.5rem;
+          width: 1.5rem;
+          fill: var(--clr-primary-dark) !important;
+        }
+      }
+
+      & .categories.clicked {
+        background-color: var(--clr-primary-light);
       }
 
       & .categories:nth-child(3) {
         padding: .5rem 1.9rem;
+        width: 250px;
+
+        & > svg {
+          height: 1.5rem;
+          width: 1.5rem;
+          fill: var(--clr-primary-dark);
+        }
       }
     }
 
@@ -126,14 +143,12 @@
     }
   }
   &_cards {
-    // border: 2px solid black;
     min-height: 400px;
 
     &--wrapper {
       display: flex;
       max-width: 100%;
       justify-content: space-between;
-      // border: 2px solid black;
       padding: 0 32px;
       gap: 16px;
     }
@@ -156,6 +171,7 @@
       display: flex;
       justify-content: center;
       overflow-x: hidden;
+      scrollbar-width: none;
 
       @media screen and (max-width:810px) {
         overflow-x: scroll;

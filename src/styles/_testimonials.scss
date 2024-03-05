@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
 
+
   @media screen and (min-width:810px) {
     padding: var(--padding-large);
   }
@@ -34,6 +35,7 @@
     scroll-snap-type: mandatory;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    scrollbar-width: none;
 
     @media screen and (min-width: 810px) {
         overflow-x: hidden;
