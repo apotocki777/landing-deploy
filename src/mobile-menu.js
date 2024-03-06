@@ -6,9 +6,7 @@ const buttons = document.querySelectorAll(".mobile-nav_menu--button")
 
 const toggleMenu = () => {
     menu.classList.toggle("hidden")
-    console.log(menu.classList)
     const menuClasses = Array.from(menu.classList)
-    console.log(menuClasses)
 
     if (menuClasses.includes("hidden")) {
         body.style.overflow = "visible"

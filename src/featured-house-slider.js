@@ -17,7 +17,6 @@ function slideLeft () {
 
     transformAmount += 100
     slideCount += 1
-    console.log(gapPercentage, transformAmount, transformAmount + gapPercentage)
     allCards.forEach(card => {
         card.style.transform = `translateX(-${transformAmount}%)`
     })
