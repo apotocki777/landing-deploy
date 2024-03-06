@@ -9,7 +9,7 @@ function slideLeft () {
     const allCards = document.querySelectorAll(".featured-house_cards--container")
     const frameWidth = frame.offsetWidth;
     const cardWidth = allCards[0].offsetWidth;
-    let gapPercentage = 8 / viewportWidth * 100
+    let gapPercentage = 16 / frameWidth * 100
 
     if (slideCount === allCards.length - (Math.round(frameWidth / cardWidth))) {
         return
@@ -17,9 +17,9 @@ function slideLeft () {
 
     transformAmount += 100
     slideCount += 1
-
+    console.log(gapPercentage, transformAmount, transformAmount + gapPercentage)
     allCards.forEach(card => {
-        card.style.transform = `translateX(-${transformAmount + 14}%)`
+        card.style.transform = `translateX(-${transformAmount}%)`
     })
 }
 
@@ -29,7 +29,6 @@ function slideRight () {
 
     transformAmount -= 100;
     slideCount -= 1;
-
     allCards.forEach(card => {
         card.style.transform = `translateX(-${transformAmount}%)`
     })

@@ -215,3 +215,38 @@
     transform: translateX(-100%);
   }
 }
+
+.square {
+  position: absolute;
+  @media screen and (min-width: 1200px) {
+    &.red {
+      height: 100px;
+      width: 50px;
+      border-top: 4px solid red;
+      border-left: 4px solid red;
+      border-radius: 4px;
+      top: 112px;
+      left: 50px;
+    }
+
+    &.blue {
+      height: 50px;
+      width: 25px;
+      border-top: 4px solid #3B82F6;
+      border-right: 4px solid #3B82F6;
+      border-radius: 4px;
+      bottom: 298px;
+      right: 118px;
+    }
+
+    &.yellow {
+      height: 50px;
+      width: 25px;
+      border-top: 4px solid #F59E0B;
+      border-right: 4px solid #F59E0B;
+      border-radius: 4px;
+      bottom: 425px;
+      right: 140px;
+    }
+  }
+}
