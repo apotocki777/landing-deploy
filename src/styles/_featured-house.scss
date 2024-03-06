@@ -55,11 +55,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 60%;
         cursor: pointer;
 
         color: var(--clr-primary-dark);
-        padding: 0.5rem 1.5rem;
+        padding: 0.8rem 1.5rem;
         gap: 8px;
         border: 1px solid var(--clr-primary-dark);
         border-radius: 100px;
@@ -71,7 +71,7 @@
         &--icon {
           height: 1.5rem;
           width: 1.5rem;
-          fill: var(--clr-primary-dark) !important;
+          fill: var(--clr-primary-dark);
         }
       }
 
@@ -80,12 +80,10 @@
       }
 
       & .categories:nth-child(3) {
-        padding: .5rem 1.9rem;
-        width: 250px;
 
-        & > svg {
-          height: 1.5rem;
-          width: 1.5rem;
+        & > svg { 
+          min-height: 1.1rem;
+          min-width: 1.1rem;
           fill: var(--clr-primary-dark);
         }
       }
