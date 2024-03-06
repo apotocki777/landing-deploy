@@ -36,10 +36,10 @@
             <p class="header__navigation--logo-title label-bold">Hounter</p>
           </div>
           <ul class="header__navigation--buttons-container">
-            <li class="nav-button">About Us</li>
-            <li class="nav-button">Article</li>
+            <li class="nav-button" tabindex="1">About Us</li>
+            <li class="nav-button" tabindex="2">Article</li>
             <nav class="dropdown">
-              <li class="nav-button">Property
+              <li class="nav-button" tabindex="3">Property
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
               </li>
               <ul class="dropdown-menu">
@@ -49,7 +49,7 @@
                 <li class="nav-button hidden">React</li>
               </ul>
             </nav>
-            <li class="nav-button">Sign Up</li>
+            <li class="nav-button" tabindex="4"   >Sign Up</li>
           </ul>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -879,15 +879,15 @@
             </li>
             <li class="select" id="select">
               <label for="edu" class="label-medium">Education</label>
-              <div class="select_container">
+              <div class="select_container" tabindex="0">
                 <div class="select_placeholder select-hidden">
                   <p class="select_placeholder--text">Select One</p>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-                  <ul class="select_list hidden">
-                    <li class="select-value">HTML</li>
-                    <li class="select-value">CSS</li>
-                    <li class="select-value">JS</li>
-                    <li class="select-value">React</li>
+                  <ul class="select_list hidden"  >
+                    <li class="select-value" tabindex="0">HTML</li>
+                    <li class="select-value" tabindex="0">CSS</li>
+                    <li class="select-value" tabindex="0">JS</li>
+                    <li class="select-value" tabindex="0">React</li>
                   </ul>
                 </div>
               </div>
