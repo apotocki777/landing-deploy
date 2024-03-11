@@ -101,11 +101,22 @@
         min-width: 0;
         font-size: 1rem;
         margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        & > svg {
+          min-width: 10px;
+          width: 10px;
+          margin-top: 2px;
+          fill: white;
+        }
 
         @media screen and (max-width: 410px) {
           grid-column: 1 / span 4;
           grid-row: 2;
           width: 100%;
+          justify-content: center;
         }
       }
     }
